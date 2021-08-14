@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+  font-family: "Poppins";
+}
+
+.header-container {
+  background-color: black;
+}
+
+@media(min-width: 769px) {
+  .header-container {
+    background: linear-gradient(79.17deg, #408195 29.35%, #00d287cc 78.73%);
+  }
+}
+
+.container-form {
+  padding: 20px 20px 100px;
+}
+
+@media(min-width: 769px) {
+  .container-form {
+    background:linear-gradient(79.17deg, #408195 29.35%, #00e392cc 78.73%)
+  }
+}
+
+@media(min-width: 769px) {
+  .container-form > .subtitle  {
+    color: white;
+  }
+}
+
+@media(min-width: 769px) {
+  .fieldset__input  {
+    color: white;
+    border-bottom: none;
+  }
+}
+
+@media(min-width: 769px) {
+  .fieldset__textarea  {
+    color: white;
+    border: none;
+  }
+}
+
+@media(min-width: 769px) {
+  .form__button  {
+    background-color: #294ea1;
+  }
+}
+
+@media(min-width: 769px) {
+  .form__message  {
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    
+  }
+}
+
+
+
+

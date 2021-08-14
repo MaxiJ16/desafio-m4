@@ -1,0 +1,252 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+}
+
+/* HEADER */
+
+.header-container {
+  height: 100vh;
+  background-image: url(../../img/portfolio.png);
+  background-size: cover;
+  background-position: 60%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-container__content {
+  height: 58vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-template__title,
+.content-template__subtitle {
+  margin: 0;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+}
+
+.content-template__title {
+  font-size: 3rem;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.content-template__subtitle {
+  font-size: 2rem;
+}
+
+.header-container__scroll {
+  display: flex;
+  justify-content: space-around;
+}
+
+.scroll__link {
+  position: absolute;
+  color: white;
+  bottom: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.scroll__link:hover  {
+  animation: animate 1s linear infinite;
+  color: red;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.scroll__img {
+  width: 16px;
+  margin-top: 12px;
+}
+
+/* PRESENTATION */
+
+.presentation {
+  background-color: #141414;
+  color: white;
+  padding: 50px 50px 80px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+@media(min-width: 769px){
+  .presentation__content {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: orange;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media(min-width: 769px){
+  .subtitle {
+    text-align: left;
+  }
+}
+
+.presentation__text-p {
+  padding: 1rem 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+@media(min-width: 769px){
+  .presentation__text-p {
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+@media(min-width: 1050px){
+  .presentation__text-p {
+    font-size: 18px;
+    padding: 0;
+    width: 532px;
+    height: 165px;
+  }
+}
+
+.presentation__img {
+  display: none;
+}
+
+@media(min-width: 769px){
+  .presentation__img {
+    display: initial;
+    width: 300px;
+    border: 2px solid orange;
+    box-shadow: 2px 5px 20px 2px black;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-top: 30px;
+    
+  }
+}
+
+/* SERVICES */
+
+.service {
+  width: 100%;
+}
+
+.service__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #343353;
+  margin: 0;
+  padding-top: 70px;
+}
+
+.service__content-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 55px 20px;
+}
+
+@media(min-width: 769px) {
+  .service__content-cards {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 55px 10px 20px;
+  }
+}
+
+@media(min-width: 980px) {
+  .service__content-cards {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 55px 55px 20px;
+  }
+}
+
+.content-cards__card {
+  font-family: "Poppins";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  max-width: 282px;
+  padding: 10px;
+  margin-bottom: 70px;
+}
+
+@media(min-width: 769px) {
+  .content-cards__card {
+    max-width: 240px;
+  }
+}
+
+@media(min-width: 980px) {
+  .content-cards__card {
+    max-width: 282px;
+  }
+}
+
+.content-cards__card:nth-child(2) {
+  box-shadow: 2px 5px 20px 2px blue;
+  background-color: #0000ff;
+}
+
+.content-cards__card:nth-child(3) {
+  box-shadow: 2px 5px 20px 2px #F50057;
+  background-color: black;
+}
+
+.content-cards__card:nth-child(1) {
+  box-shadow: 2px 5px 20px 2px #ff001e;
+  background-color: #ff001e;
+}
+
+.card__title,
+.card__p,
+.card__img{
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.card__img {
+  height: 128px;
+}
+.card__title {
+  font-size: 24px;
+}
+
+.card__p {
+  max-width: 262px;
+}

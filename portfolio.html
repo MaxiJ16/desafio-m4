@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link href="img/logo.png" rel="icon">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&family=Rubik:ital,wght@1,500&display=swap" rel="stylesheet">
+
+  <!-- header component -->
+  <link rel="stylesheet" href="./components/header/header.css">
+  <script async src="./components/header/header.js"></script>
+
+  <!-- footer component -->
+  <link rel="stylesheet" href="./components/footer/footer.css">
+  <script async src="./components/footer/footer.js"></script>
+
+  <script async src="./scripts/portfolio-content.js"></script>
+
+  <link rel="stylesheet" href="./styles/portfolio.css">
+  <script async src="./scripts/portfolio.js"></script>
+</head>
+
+<body>
+  
+  <div class="main-container">
+
+    <header class="header-container">
+      <nav class="header-container__nav"></nav>
+      <div class="header__content-subtitle">
+        <h2 class="header__subtitle">Portfolio</h2>
+      </div>
+    </header>
+
+    <section class="service">
+      <div class="service__content"></div>
+      <template class="service__content-template">
+
+        <h2 class="service__subtitle"></h2>
+        
+        <div class="service__content-cards">
+        
+          <article class="content-cards__card">
+            <img class="card__img" src="./img/undraw_static_assets_rpm6.svg" alt="front">
+            <h4 class="card__title">Front end</h4>
+            <p class="card__p" align="center"> Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
+            <a class="portfolio__link" href="https://maxij16.github.io/cv-rocket/">https://maxij16.github.io/cv-rocket/</a>
+          </article>
+        
+
+          
+         
+            <article class="content-cards__card">
+              <img class="card__img" src="./img/undraw_server_down_s4lk.svg" alt="back">
+              <h4 class="card__title">Back end</h4>
+              <p class="card__p" align="center"> Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
+              <a class="portfolio__link" href="https://proyecto-final-inventario.netlify.app/">https://proyecto-final-inventario.netlify.app/</a>
+            </article>
+            
+        
+          
+         
+          <article class="content-cards__card">
+            <img class="card__img" src="./img/undraw_programming_2svr (1).svg" alt="full">
+            <h4 class="card__title">Full stack</h4>
+            <p class="card__p" align="center"> Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
+            <a class="portfolio__link" href="https://maxij16.github.io/consumiendo-api/">https://maxij16.github.io/consumiendo-api/</a>
+          </article>
+
+        
+        </div>
+      </template>
+    </section>
+
+    <footer class="footer"></footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link href="img/logo.png" rel="icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&family=Rubik:ital,wght@1,500&display=swap" rel="stylesheet">
+
+  <!-- header component -->
+  <link rel="stylesheet" href="./components/header/header.css">
+  <script async src="./components/header/header.js"></script>
+
+  <!-- form component -->
+  <link rel="stylesheet" href="./components/form/form.css">
+  <script async src="./components/form/form.js"></script>
+
+  <!-- footer component -->
+  <link rel="stylesheet" href="./components/footer/footer.css">
+  <script async src="./components/footer/footer.js"></script>
+
+  <!-- scripts -->
+  <script async src="./scripts/header-content.js"></script>
+  <script async src="./scripts/presentation-content.js"></script>
+  <script async src="./scripts/services-content.js"></script>
+
+  <script async src="./scripts/index.js"></script>
+  <link rel="stylesheet" href="./styles/index.css">
+
+</head>
+<body>
+  <div class="main-container">
+    <header class="header-container">
+      <nav class="header-container__nav"></nav>
+      <div class="header-container__content">
+        <div class="header-container__content-template"></div>
+        <template class="content-template" id="home">
+          <h1 class="content-template__title">Hola</h1>
+          <h2 class="content-template__subtitle">Soy Maxi</h2>
+        </template>
+      </div>
+      <div class="header-container__scroll">
+        <a href="#presentation" class="scroll__link">
+          <span class="scroll__text">Scroll Down</span>
+          <img src="./img/scroll.png" alt="" class="scroll__img">
+        </a>
+      </div>
+      
+    </header>
+
+    <section class="presentation" id="presentation">
+      <div class="presentation__content"></div>
+      <template class="presentation__content-template">
+        <img class="presentation__img" src="" alt="presentation__img" >
+        <article class="presentation__text">
+          <h2 class="subtitle">Soy Maxi</h2>
+          <p class="presentation__text-p">Desde que arrancó la pandemia encontré el mundo del desarrollo web y me apasionó mucho. Actualmente se manejar tecnologías como HTML, CSS, Javascript, Typescript, Bootstrap y Bulma del lado del front, y en el back tengo conocimientos en Node.js, Express y base de datos Mysql. En este momento me encuentro realizando la carrera de Apx muy entusiasmado, dónde todavía tengo mucho por aprender y sumar! </p>
+        </article>
+      </template>
+    </section>
+
+    <section class="service">
+      <div class="service__content"></div>
+      <template class="service__content-template">
+        <h2 class="service__subtitle">Servicios</h2>
+    
+        <div class="service__content-cards">
+          <article class="content-cards__card">
+            <img class="card__img" src="./img/undraw_static_assets_rpm6.svg" alt="front">
+            <h4 class="card__title">Front end</h4>
+            <p class="card__p" align="center"> Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
+          </article>
+      
+          <article class="content-cards__card">
+            <img class="card__img" src="./img/undraw_server_down_s4lk.svg" alt="back">
+            <h4 class="card__title">Back end</h4>
+            <p class="card__p" align="center"> Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
+          </article>
+        
+          <article class="content-cards__card">
+            <img class="card__img" src="./img/undraw_programming_2svr (1).svg" alt="full">
+            <h4 class="card__title">Full stack</h4>
+            <p class="card__p" align="center"> Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
+          </article>
+        </div>
+      </template>
+    </section>
+
+    <section class="container__form"></section>
+
+    <footer class="footer"></footer>
+    
+  </div>
+</body>
+</html>
