@@ -8,12 +8,7 @@
   getPortfolioContent()
   .then((por) => {
     for (const p of por) {
-      console.log(p)
-      addPortfolioContent(p)
+      addPortfolioContent(p);
     };
   });
-
-
-
-
 })();

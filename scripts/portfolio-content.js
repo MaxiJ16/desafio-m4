@@ -15,7 +15,7 @@ function addPortfolioContent(params = {}) {
   pCardOne.textContent = params.pCardOne;
 
   // two
-  const imgCardTwo = template.content.querySelectorAll(".card__img")[0];
+  const imgCardTwo = template.content.querySelectorAll(".card__img")[1];
   imgCardTwo.src = params.imgCardTwo;
 
   const titleCardTwo = template.content.querySelectorAll(".card__title")[1];
@@ -25,7 +25,7 @@ function addPortfolioContent(params = {}) {
   pCardTwo.textContent = params.pCardTwo;
   
   // three
-  const imgCardThree = template.content.querySelectorAll(".card__img")[1];
+  const imgCardThree = template.content.querySelectorAll(".card__img")[0];
   imgCardThree.src = params.imgCardThree;
 
   const titleCardThree = template.content.querySelectorAll(".card__title")[2];
@@ -45,7 +45,6 @@ function getPortfolioContent() {
   })
   .then((json) => {
     const fieldsCollection = json.items.map((item) => {
-      console.log(item)
       return {
         subtitle: item.fields.subtitle,
         imgCardOne: json.includes.Asset["0"].fields.file.url,
