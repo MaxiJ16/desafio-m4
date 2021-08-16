@@ -26,12 +26,15 @@ function navbarListenEvent() {
   const windowEl = document.querySelector(".nav-container__menu-window");
   const burguerEl = document.querySelector(".nav-container__menu-burguer");
   const closeWindowEl = document.querySelector(".menu-window__close-window");
+  const scroll = document.querySelector(".header-container__scroll");
 
   burguerEl.addEventListener("click", () => {
     windowEl.style.display = "flex";
+    scroll.style.display = "none";
   });
 
   closeWindowEl.addEventListener("click", () => {
     windowEl.style.display = "";
+    scroll.style.display = "";
   });
 }

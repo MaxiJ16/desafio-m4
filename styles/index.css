@@ -18,9 +18,10 @@ body {
 
 .header-container {
   height: 100vh;
+  background-color: black;
   background-image: url(../img/portfolio.png);
   background-size: cover;
-  background-position: 60%;
+  background-position: 60%; 
   font-family: "Montserrat", sans-serif;
 }
 
