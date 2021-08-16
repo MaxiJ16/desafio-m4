@@ -28,3 +28,14 @@ function getHeaderContent() {
     return fieldsCollection;
   })
 }
+
+function main(){
+  getHeaderContent()
+  .then((headerContent) => {
+    for(const h of headerContent) {
+      addHeaderContent(h);
+    };
+  });
+}
+
+main();

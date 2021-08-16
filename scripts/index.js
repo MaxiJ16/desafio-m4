@@ -13,32 +13,8 @@ function addComponent(){
   footerComponent(containerFooter);
 }
 
-function addContent(){
-  getHeaderContent()
-  .then((headerContent) => {
-    for(const h of headerContent) {
-      addHeaderContent(h);
-    };
-  });
-  
-  getPresentationContent()
-  .then((presentation) => {
-    for (const p of presentation) {
-      addPresentationContent(p);
-    };
-  });
-  
-  getServicesContent()
-  .then((serv) => {
-    for (const s of serv) {
-      addServicesContent(s)
-    };
-  });
-}
-
 (function main() {
   addComponent();
-  addContent();
   submitForm();
 
 })();

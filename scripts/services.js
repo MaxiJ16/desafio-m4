@@ -5,12 +5,4 @@
    navbarListenEvent();
    footerComponent(containerFooter);
 
-   getServicesContent()
-   .then((serv) => {
-     for (const s of serv) {
-       addServicesContent(s)
-     };
-   });
-
- 
 })();

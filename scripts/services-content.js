@@ -61,3 +61,14 @@ function getServicesContent() {
     return fieldsCollection;
   })
 }
+
+function main() {
+  getServicesContent()
+   .then((serv) => {
+     for (const s of serv) {
+       addServicesContent(s)
+     };
+   });
+}
+
+main();

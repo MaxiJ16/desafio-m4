@@ -33,3 +33,12 @@ function getPresentationContent() {
     return fieldsCollection;
   })
 }
+
+(function main(){
+  getPresentationContent()
+  .then((presentation) => {
+    for (const p of presentation) {
+      addPresentationContent(p);
+    };
+  });
+})();
