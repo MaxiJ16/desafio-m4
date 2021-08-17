@@ -1,8 +1,11 @@
-(function main(){
+function addComponentsService(){
    const containerNav = document.querySelector(".header-container__nav");
-   const containerFooter = document.querySelector(".footer");
    headerComponent(containerNav);
    navbarListenEvent();
+   const containerFooter = document.querySelector(".footer");
    footerComponent(containerFooter);
+}
 
+(function main(){
+   addComponentsService();
 })();

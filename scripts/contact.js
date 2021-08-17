@@ -1,11 +1,14 @@
-(function main() {
-  // header component
+function addComponentsContact(){
   const containerNav = document.querySelector(".header-container__nav");
-  const containerForm = document.querySelector(".container__form");
-  const containerFooter = document.querySelector(".footer");
   headerComponent(containerNav);
   navbarListenEvent();
+  const containerForm = document.querySelector(".container__form");
   formComponent(containerForm);
-  footerComponent(containerFooter);
   submitForm();
+  const containerFooter = document.querySelector(".footer");
+  footerComponent(containerFooter);
+}
+
+(function main() {
+  addComponentsContact();
 })();

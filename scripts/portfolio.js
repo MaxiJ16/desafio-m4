@@ -1,14 +1,11 @@
-(function main(){
+function addComponentsPortfolio(){
   const containerNav = document.querySelector(".header-container__nav");
-  const containerFooter = document.querySelector(".footer");
   headerComponent(containerNav);
   navbarListenEvent();
+  const containerFooter = document.querySelector(".footer");
   footerComponent(containerFooter);
+}
 
-  getPortfolioContent()
-  .then((por) => {
-    for (const p of por) {
-      addPortfolioContent(p);
-    };
-  });
+(function main(){
+  addComponentsPortfolio();
 })();

@@ -2,7 +2,6 @@ function addPresentationContent(params = {}) {
   const template = document.querySelector(".presentation__content-template");
   const container = document.querySelector(".presentation__content");
   
-  
   const subtitle = template.content.querySelector(".subtitle");
   subtitle.textContent = params.subtitle;
   

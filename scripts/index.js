@@ -7,6 +7,7 @@ function addComponent(){
   // form component
   const containerForm = document.querySelector(".container__form");
   formComponent(containerForm);
+  submitForm();
   
   // footer component
   const containerFooter = document.querySelector(".footer");
@@ -15,7 +16,5 @@ function addComponent(){
 
 (function main() {
   addComponent();
-  submitForm();
-
 })();
 

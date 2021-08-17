@@ -61,3 +61,12 @@ function getPortfolioContent() {
     return fieldsCollection;
   })
 }
+
+(function main(){
+  getPortfolioContent()
+  .then((por) => {
+    for (const p of por) {
+      addPortfolioContent(p);
+    };
+  });
+})();
