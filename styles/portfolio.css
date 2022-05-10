@@ -134,6 +134,9 @@ body {
   background-color: rgb(170, 199, 8);
 }
 
+.card__title {
+  text-align: center;
+}
 
 .card__title,
 .card__p,
