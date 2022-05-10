@@ -155,7 +155,7 @@ body {
   max-width: 262px;
 }
 
-.portfolio__link {
+.lostpet__link {
   font-family: "Poppins";
   font-weight: 700;
   text-decoration: none;
@@ -163,6 +163,6 @@ body {
   font-size: 10px;
 }
 
-.portfolio__link:hover {
+.lostpet__link:hover {
   color: orangered;
 }
