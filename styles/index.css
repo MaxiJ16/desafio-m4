@@ -48,6 +48,8 @@ body {
 
 .content-template__subtitle {
   font-size: 2rem;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .header-container__scroll {
